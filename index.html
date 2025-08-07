@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">DINTANI</div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('experience')">Experience</a></li>
+      <li><a href="#" onclick="showPage('skill')">Skill</a></li>
+      <li><a href="#" onclick="showPage('about')">About</a></li>
+    </ul>
+    <button class="sign-in" onclick="showPage('login')">Sign In</button>
+  </nav>
+
+  <!-- Konten utama -->
+  <main>
+    <!-- Halaman Home -->
+    <section id="home" class="page active">
+      <h1>Hi, I'm Dintani Metha Hamdi</h1>
+      <p>Mahasiswa Teknik Informatika di Institut Teknologi Sumatera</p>
+      <p>ID: 124140116</p>
+      <div class="btn-group">
+        <button onclick="showPage('experience')">Experience</button>
+        <button onclick="showPage('skill')">Skill</button>
+      </div>
+    </section>
+
+    <!-- Halaman Experience -->
+    <section id="experience" class="page">
+      <h2>Experience</h2>
+      <div class="exp-card">
+        <h3>Divisi Koordinasi Lapangan – Panitia BUMI KETUPAT</h3>
+        <p>Berperan dalam pelaksanaan teknis kegiatan dan pengaturan lapangan.</p>
+      </div>
+      <div class="exp-card">
+        <h3>Anggota Laskar Hijau</h3>
+        <p>Berperan aktif dalam kegiatan dan penanganan teknis lapangan.</p>
+      </div>
+    </section>
+
+    <!-- Halaman Skill -->
+    <section id="skill" class="page">
+      <h2>Skill & Interest</h2>
+      <table class="skill-table">
+        <thead>
+          <tr>
+            <th>Skill</th>
+            <th>Interest</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML & CSS</td>
+            <td>Cyber Security</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Game Development</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>UI/UX Design</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+      <!-- Halaman About -->
+    <section id="about" class="page">
+      <h2>About Me</h2>
+      <p>Saya adalah mahasiswa yang sedang mempelajari pengembangan web, keamanan siber, dan game development. Saya tertarik dalam pengembangan teknologi serta selalu ingin belajar hal baru.</p>
+    </section>
+
+
+    <!-- Halaman Login -->
+   <section id="login" class="page">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Masuk</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dintani Metha Hamdi | @dnth.md</p>
+  </footer>
+
+  <!-- Script Navigasi -->
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
