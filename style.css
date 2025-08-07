@@ -1,0 +1,210 @@
+/* Reset dan global */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* Flexbox agar footer stay di bawah */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #1fa3b2, #0e3d6c);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links li a:hover {
+  opacity: 0.8;
+}
+
+.sign-in {
+  background: white;
+  color: #1f5aa2;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 4rem 2rem;
+}
+
+.page {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Heading */
+h1, h2 {
+  color: #2a1fa2;
+}
+
+/* Tombol navigasi home */
+.btn-group {
+  margin-top: 1rem;
+}
+
+.btn-group button {
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1f30a2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Login form */
+.login-container {
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  font-size: 1rem;
+}
+
+.login-container button {
+  background: #177f94;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Card layout */
+.exp-card, .skill-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+
+/* Footer selalu di bawah */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(90deg, #1fa3b2, #0e3d6c);
+  color: white;
+  margin-top: 0;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#home {
+  background: rgba(27, 122, 163, 0.08); 
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+#experience {
+  background: rgba(27, 122, 163, 0.08); 
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+#skill {
+    background: rgba(27, 122, 163, 0.0); 
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* Table khusus skill */
+.skill-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-table th,
+.skill-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.skill-table th {
+  background-color: #1f60a2;
+  color: white;
+  font-weight: bold;
+}
+
+.skill-table tr:last-child td {
+  border-bottom: none;
+}
+#about {
+   background: rgba(27, 122, 163, 0.08);    
+   padding: 2rem;   
+   border-radius: 12px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+   max-width: 800px;
+   margin: 2rem auto;
+   text-align: justify;
+   word-wrap: break-word;
+   line-height: 1.6;
+}
