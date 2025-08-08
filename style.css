@@ -161,6 +161,34 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
+
+.minimal-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.8rem 0 0 0;
+  text-align: left;
+}
+
+.minimal-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333; /* teks lebih jelas */
+}
+
+.minimal-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 6px;
+  height: 6px;
+  background-color: #1f5aa2; /* warna tema */
+  border-radius: 50%; /* bulat sempurna */
+}
+
 #skill {
     background: rgba(27, 122, 163, 0.0); 
     border-radius: 12px;
@@ -262,4 +290,14 @@ footer {
   height: 40px;
   object-fit: cover;
   opacity: 1;       /* Pastikan opacity penuh */
+}
+footer .ig-link {
+  color: white;
+  text-decoration: none;
+  font-weight: italic;
+}
+
+footer .ig-link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
 }
